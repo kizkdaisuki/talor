@@ -1,0 +1,12 @@
+- python的命令需要按照谷歌的代码风格
+    - 本地变量用 local_var_name
+    - 全局变量用 global_var_name
+    - 类变量用 class_var_name
+    - 函数名用 func_name
+    - 方法名用 method_name
+    - 常量用 const_name
+    - 枚举用 enum_name
+    - 异常用 exception_name
+    - 模块名用 module_name
+    - 包名用 package_name
+    - 文件名用 file_name

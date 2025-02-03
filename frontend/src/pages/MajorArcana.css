@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+body {
+  background-color: #121212;
+}
+
+.major-arcana {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.intro-section {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ccc;
+  text-align: justify;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 4rem 6rem;
+  justify-content: center;
+}
+
+.card-item {
+  text-decoration: none;
+  color: inherit;
+  background: rgba(156, 39, 176, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+              0 2px 4px rgba(156, 39, 176, 0.2);
+  border: 1px solid rgba(156, 39, 176, 0.2);
+  width: 320px;
+  margin: 0 auto;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
+              0 4px 8px rgba(156, 39, 176, 0.3);
+  border-color: rgba(156, 39, 176, 0.4);
+}
+
+.card-header {
+  border-bottom: 2px solid #9c27b0;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h2 {
+  color: #9c27b0;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.card-title {
+  color: #9c27b0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.card-number {
+  color: rgba(156, 39, 176, 0.8);
+  font-size: 1.4rem;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.card-content {
+  color: #ccc;
+}
+
+.card-meaning {
+  margin-bottom: 1.5rem;
+}
+
+.card-meaning h3 {
+  color: #9c27b0;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-meaning p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.major-arcana-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.major-arcana-page h1 {
+  text-align: center;
+  color: #e9ecef;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(156, 39, 176, 0.3);
+}
+
+.cards-container {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.fool-card-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.card-image-container {
+  width: 320px;
+  height: 560px;
+  position: relative;
+  background-color: #1a1a1a;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-info {
+  padding: 1.2rem;
+  text-align: center;
+  background: rgba(156, 39, 176, 0.05);
+  border-top: 1px solid rgba(156, 39, 176, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-name {
+  color: #e9ecef;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.card-details {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #1a1a1a;
+  border: 1px solid rgba(156, 39, 176, 0.3);
+  border-radius: 15px;
+  padding: 3rem;
+  color: #e9ecef;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4),
+              0 8px 24px rgba(156, 39, 176, 0.3);
+}
+
+.card-details h2 {
+  color: #9c27b0;
+  font-size: 2.4rem;
+  margin: 0 0 1rem;
+  padding-right: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-section {
+  margin: 2rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+.card-section:last-child {
+  border-bottom: none;
+}
+
+.card-section h4 {
+  color: #9c27b0;
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card-section p {
+  color: #e9ecef;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-keywords {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+.card-description {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+.card-interpretation {
+  margin-bottom: 1rem;
+}
+
+.card-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-details::-webkit-scrollbar-track {
+  background: rgba(156, 39, 176, 0.1);
+  border-radius: 4px;
+}
+
+.card-details::-webkit-scrollbar-thumb {
+  background: rgba(156, 39, 176, 0.3);
+  border-radius: 4px;
+}
+
+.card-details::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 39, 176, 0.5);
+}
+
+/* 愚人牌样式 */
+.fool-card {
+  width: 320px;
+}
+
+.fool-card .card-info {
+  padding: 1.2rem;
+}
+
+.fool-card .card-title {
+  font-size: 1.4rem;
+}
+
+.fool-card .card-number {
+  font-size: 1.5rem;
+}
+
+.fool-card .card-name {
+  font-size: 1.3rem;
+}
+
+/* 响应式布局 */
+@media (max-width: 1200px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card-item {
+    max-width: 250px;
+  }
+
+  .fool-card {
+    width: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .card-item {
+    max-width: 220px;
+  }
+
+  .fool-card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .major-arcana-page {
+    padding: 1rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .card-item {
+    max-width: 160px;
+  }
+
+  .fool-card {
+    width: 160px;
+  }
+
+  .card-info {
+    padding: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card-number {
+    font-size: 0.8rem;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #9c27b0;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  background: rgba(156, 39, 176, 0.1);
+  color: #e9ecef;
+}
+
+.card-section {
+  margin: 2rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+.card-section:last-child {
+  border-bottom: none;
+}
+
+.card-section h4 {
+  color: #9c27b0;
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+.card-section p {
+  color: #e9ecef;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+}
+
+.card-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-details::-webkit-scrollbar-track {
+  background: rgba(156, 39, 176, 0.1);
+  border-radius: 4px;
+}
+
+.card-details::-webkit-scrollbar-thumb {
+  background: rgba(156, 39, 176, 0.3);
+  border-radius: 4px;
+}
+
+.card-details::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 39, 176, 0.5);
+}
+
+@media (max-width: 768px) {
+  .card-details {
+    padding: 1.5rem;
+  }
+
+  .card-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-section h4 {
+    font-size: 1.1rem;
+  }
+
+  .card-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+} 
